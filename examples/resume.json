@@ -1,0 +1,56 @@
+{
+  "basics": {
+    "name": "Richard Hendriks",
+    "label": "Senior Software Engineer",
+    "email": "richard@piedpiper.com",
+    "phone": "+1 (555) 123-4567",
+    "url": "https://richardhendriks.dev",
+    "summary": "Innovative software engineer with 10+ years of experience building scalable distributed systems and leading high-performance engineering teams.",
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "richardhendriks"
+      },
+      {
+        "network": "GitHub",
+        "username": "richardhendriks"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["TypeScript", "Python", "Go", "Rust"]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": ["AWS", "Kubernetes", "Docker", "Terraform"]
+    }
+  ],
+  "work": [
+    {
+      "name": "Pied Piper",
+      "position": "CTO & Co-Founder",
+      "startDate": "2019-03",
+      "summary": "Tech-stack: TypeScript, Go, Kubernetes, PostgreSQL",
+      "highlights": [
+        "Architected middle-out compression algorithm achieving 5.2x Weissman score",
+        "Led a team of 12 engineers delivering platform serving 50M+ daily requests"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "endDate": "2016-06",
+      "score": "GPA: 3.92/4.0"
+    }
+  ]
+}

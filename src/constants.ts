@@ -1,0 +1,46 @@
+export const MONTHS: readonly string[] = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+export const COUNTRY_NAMES: Readonly<Record<string, string>> = {
+  GB: 'United Kingdom',
+  US: 'United States',
+  CA: 'Canada',
+  AU: 'Australia',
+  DE: 'Germany',
+  FR: 'France',
+  IN: 'India',
+  JP: 'Japan',
+  CN: 'China',
+  BR: 'Brazil',
+  NL: 'Netherlands',
+  IT: 'Italy',
+  ES: 'Spain',
+  SE: 'Sweden',
+  CH: 'Switzerland',
+  SG: 'Singapore',
+  NZ: 'New Zealand',
+  IE: 'Ireland',
+  AE: 'UAE',
+};
+
+export const DEFAULT_HEADINGS: Readonly<Record<string, string>> = {
+  skills: 'Core Skills',
+  experience: 'Experience',
+  projects: 'Selected Projects',
+  education: 'Education',
+  volunteer: 'Leadership & Volunteering',
+  certifications: 'Credentials',
+  additional: 'Additional',
+};

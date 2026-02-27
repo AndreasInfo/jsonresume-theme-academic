@@ -1,0 +1,148 @@
+{
+  "basics": {
+    "name": "Richard Hendriks",
+    "label": "Senior Software Engineer & Technical Lead",
+    "email": "richard@piedpiper.com",
+    "phone": "+1 (555) 123-4567",
+    "url": "https://richardhendriks.dev",
+    "summary": "<p>Innovative software engineer with 10+ years of experience building <mark class=\"highlight-yellow\">scalable distributed systems</mark> and leading high-performance engineering teams. Passionate about data compression, algorithm optimization, and clean architecture.</p>",
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "richardhendriks",
+        "url": "https://linkedin.com/in/richardhendriks"
+      },
+      {
+        "network": "GitHub",
+        "username": "richardhendriks",
+        "url": "https://github.com/richardhendriks"
+      },
+      {
+        "network": "Twitter",
+        "username": "richard_h",
+        "url": "https://twitter.com/richard_h"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["TypeScript", "Python", "Go", "Rust", "C++"]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD"]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": ["React", "Node.js", "FastAPI", "gRPC"]
+    }
+  ],
+  "work": [
+    {
+      "name": "Pied Piper",
+      "position": "CTO & Co-Founder",
+      "startDate": "2019-03",
+      "endDate": "",
+      "summary": "Tech-stack: TypeScript, Go, Kubernetes, PostgreSQL\nClient: Various enterprise clients",
+      "highlights": [
+        "Architected a <b>middle-out compression</b> algorithm achieving 5.2x Weissman score",
+        "Led a team of 12 engineers delivering platform serving 50M+ daily requests",
+        "Reduced infrastructure costs by 40% through strategic migration to Kubernetes"
+      ]
+    },
+    {
+      "name": "Hooli",
+      "position": "Senior Software Engineer",
+      "startDate": "2016-06",
+      "endDate": "2019-02",
+      "summary": "Tech-stack: Java, Python, AWS, Apache Spark",
+      "highlights": [
+        "Built real-time data pipeline processing 2TB/day with <i>sub-second latency</i>",
+        "Mentored 5 junior engineers through structured onboarding program",
+        "Contributed to open-source projects with 1,000+ GitHub stars"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Piper Compression SDK",
+      "description": "Open-source compression library used by <a href=\"https://example.com\">500+ companies</a> worldwide. Features adaptive encoding and streaming support."
+    },
+    {
+      "name": "DevMetrics Dashboard",
+      "description": "Real-time engineering productivity dashboard tracking deploy frequency, lead time, and MTTR across 20+ microservices."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2014-09",
+      "endDate": "2016-06",
+      "score": "GPA: 3.92/4.0",
+      "courses": ["Advanced Algorithms", "Distributed Systems", "Machine Learning"]
+    },
+    {
+      "institution": "MIT",
+      "area": "Computer Science & Mathematics",
+      "studyType": "B.S.",
+      "startDate": "2010-09",
+      "endDate": "2014-05"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Code.org",
+      "position": "Technical Mentor",
+      "startDate": "2020",
+      "endDate": "2024",
+      "summary": "Mentored underrepresented students in CS fundamentals and career development"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Solutions Architect Professional",
+      "date": "2023-01",
+      "issuer": "Amazon Web Services"
+    },
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "date": "2022-06",
+      "issuer": "CNCF"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research Interests",
+      "keywords": ["Data Compression", "Distributed Systems", "Algorithm Optimization"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "German",
+      "fluency": "Professional working"
+    }
+  ],
+  "references": [
+    {
+      "name": "Gavin Belson",
+      "reference": "Richard is the most brilliant engineer I've encountered."
+    }
+  ],
+  "meta": {
+    "headings": {
+      "experience": "Professional Experience"
+    }
+  }
+}

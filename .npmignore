@@ -1,0 +1,14 @@
+src/
+test/
+examples/
+.github/
+.husky/
+.eslintrc.cjs
+.prettierrc
+.releaserc.json
+tsconfig.json
+vite.config.ts
+vitest.config.ts
+coverage/
+*.tsbuildinfo
+.vite/

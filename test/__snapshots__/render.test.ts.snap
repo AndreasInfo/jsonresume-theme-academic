@@ -1,0 +1,188 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`render > renders full resume matching snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Hendriks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style></style>
+</head>
+<body>
+  <div class="resume">
+    
+    <header class="header">
+      <div class="header-left">
+        <h1 class="name">Richard Hendriks</h1>
+        <div class="label">Senior Software Engineer &amp; Technical Lead</div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-line">San Francisco, Canada <i class="fa-solid fa-location-dot"></i></div>
+        <div class="contact-line">+1 (555) 123-4567 <i class="fa-solid fa-square-phone"></i></div>
+        <div class="contact-line">richard@piedpiper.com <i class="fa-solid fa-envelope"></i></div>
+        <div class="contact-line">richardhendriks.dev <i class="fa-solid fa-globe"></i></div>
+        <div class="contact-line">richardhendriks <i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="contact-line">richardhendriks <i class="fa-brands fa-github"></i></div>
+        <div class="contact-line">richard_h <i class="fa-brands fa-x-twitter"></i></div>
+      </div>
+    </header>
+    <hr class="header-rule" />
+    <div class="summary"><p>Innovative software engineer with 10+ years of experience building <mark class="highlight-yellow">scalable distributed systems</mark> and leading high-performance engineering teams. Passionate about data compression, algorithm optimization, and clean architecture.</p></div>
+    
+    <h2 class="section-title">Core Skills</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item">
+        <span class="skill-name">Languages:</span> TypeScript, Python, Go, Rust, C++
+      </div>
+      <div class="bullet-item">
+        <span class="skill-name">Infrastructure:</span> AWS, Kubernetes, Docker, Terraform, CI/CD
+      </div>
+      <div class="bullet-item">
+        <span class="skill-name">Frameworks:</span> React, Node.js, FastAPI, gRPC
+      </div>
+    </div>
+    
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="section-body">
+      
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">Pied Piper - CTO &amp; Co-Founder</div>
+        <div class="work-duration">Duration: March 2019</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: TypeScript, Go, Kubernetes, PostgreSQL</div>
+        <div class="work-client">Client: Various enterprise clients</div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Architected a <b>middle-out compression</b> algorithm achieving 5.2x Weissman score</li>
+        <li>Led a team of 12 engineers delivering platform serving 50M+ daily requests</li>
+        <li>Reduced infrastructure costs by 40% through strategic migration to Kubernetes</li>
+      </ul>
+    </div>
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">Hooli - Senior Software Engineer</div>
+        <div class="work-duration">Duration: June 2016 to February 2019</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: Java, Python, AWS, Apache Spark</div>
+        <div class="work-client"></div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Built real-time data pipeline processing 2TB/day with <i>sub-second latency</i></li>
+        <li>Mentored 5 junior engineers through structured onboarding program</li>
+        <li>Contributed to open-source projects with 1,000+ GitHub stars</li>
+      </ul>
+    </div>
+    </div>
+    
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item">
+        <span class="project-name">Piper Compression SDK:</span> Open-source compression library used by <a href="https://example.com" target="_blank" rel="noopener">500+ companies</a> worldwide. Features adaptive encoding and streaming support.
+      </div>
+      <div class="bullet-item">
+        <span class="project-name">DevMetrics Dashboard:</span> Real-time engineering productivity dashboard tracking deploy frequency, lead time, and MTTR across 20+ microservices.
+      </div>
+    </div>
+    
+    <h2 class="section-title">Education</h2>
+    <div class="section-body">
+      
+    <div class="edu-entry">
+      <div class="edu-header">
+        <div class="edu-degree">M.S. Computer Science</div>
+        <div class="edu-year">June 2016</div>
+      </div>
+      <div class="edu-institution">Stanford University | GPA: 3.92/4.0</div>
+      
+      <div class="edu-courses">
+        <div>Advanced Algorithms</div><div>Distributed Systems</div><div>Machine Learning</div>
+      </div>
+    </div>
+    <div class="edu-entry">
+      <div class="edu-header">
+        <div class="edu-degree">B.S. Computer Science &amp; Mathematics</div>
+        <div class="edu-year">May 2014</div>
+      </div>
+      <div class="edu-institution">MIT</div>
+      
+    </div>
+    </div>
+    
+    <h2 class="section-title">Leadership &amp; Volunteering</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item volunteer-item">
+        <span class="vol-title">Technical Mentor – Code.org (2020–2024):</span> Mentored underrepresented students in CS fundamentals and career development
+      </div>
+    </div>
+    
+    <h2 class="section-title">Credentials</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item">AWS Solutions Architect Professional</div>
+      <div class="bullet-item">Certified Kubernetes Administrator (CKA)</div>
+    </div>
+    
+    <h2 class="section-title">Additional</h2>
+    <div class="section-body">
+      <div class="additional-line"><span class="additional-label">Research Interests:</span> Data Compression, Distributed Systems, Algorithm Optimization</div>
+      <div class="additional-line"><span class="additional-label">Languages:</span> English (Native), German (Professional working)</div>
+      <div class="additional-line"><span class="additional-label">Referees:</span> Available on request</div>
+    </div>
+  </div>
+</body>
+</html>"
+`;
+
+exports[`render > renders minimal resume matching snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style></style>
+</head>
+<body>
+  <div class="resume">
+    
+    <header class="header">
+      <div class="header-left">
+        <h1 class="name">Jane Doe</h1>
+        <div class="label">Software Developer</div>
+      </div>
+      <div class="contact-info">
+        
+      </div>
+    </header>
+    <hr class="header-rule" />
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+</body>
+</html>"
+`;
