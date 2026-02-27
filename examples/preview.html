@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebenezer Isaac</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>@page {
+  size: A4;
+  margin: 12mm 14mm;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'EB Garamond', Georgia, 'Palatino Linotype', 'Times New Roman', serif;
+  font-size: 10pt;
+  line-height: 1.32;
+  color: #000;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Browser-only padding (overridden by @page margin in print/PDF) */
+body {
+  padding: 12mm 14mm;
+}
+@media print {
+  body { padding: 0; }
+}
+
+/* ─── Header ─── */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.header-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 32pt;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #000;
+  letter-spacing: 0.3px;
+}
+
+.label {
+  font-style: italic;
+  font-size: 10.5pt;
+  margin-top: 4px;
+  color: #222;
+  line-height: 1.3;
+}
+
+.contact-info {
+  text-align: right;
+  font-size: 8.5pt;
+  line-height: 1.65;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.contact-line {
+  white-space: nowrap;
+}
+
+.contact-line i {
+  display: inline-block;
+  width: 11px;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 7.5pt;
+}
+
+.header-rule {
+  border: none;
+  border-top: 0.5px solid #666;
+  margin: 6px 0 3px;
+}
+
+/* ─── Summary ─── */
+
+.summary {
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 1.38;
+  margin-bottom: 2px;
+  text-align: justify;
+}
+
+/* ─── Section Headings ─── */
+
+.section-title {
+  font-variant: small-caps;
+  font-size: 12.5pt;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  border-bottom: 1.5px solid #C4962C;
+  padding-bottom: 1px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  color: #000;
+  page-break-after: avoid;
+}
+
+/* ─── Bullet Items (shared) ─── */
+
+.bullet-item {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 2px;
+}
+
+.bullet-item::before {
+  content: '\25CB';
+  position: absolute;
+  left: 0;
+  font-size: 7pt;
+  top: 2.5px;
+}
+
+/* ─── Skills ─── */
+
+.skill-name {
+  font-weight: 700;
+}
+
+/* ─── Work Experience ─── */
+
+.work-entry {
+  margin-bottom: 7px;
+  page-break-inside: avoid;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.work-duration {
+  font-size: 9.5pt;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.work-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.work-tech {
+  font-style: italic;
+  font-size: 9.5pt;
+}
+
+.work-client {
+  font-style: italic;
+  font-size: 9.5pt;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.work-highlights {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 3px;
+}
+
+.work-highlights li {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 3px;
+  text-align: justify;
+}
+
+.work-highlights li::before {
+  content: '\25CB';
+  position: absolute;
+  left: 0;
+  font-size: 7pt;
+  top: 2.5px;
+}
+
+/* ─── Education ─── */
+
+.edu-entry {
+  margin-bottom: 5px;
+  page-break-inside: avoid;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.edu-year {
+  font-size: 10pt;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.edu-institution {
+  font-size: 9.5pt;
+}
+
+.edu-courses {
+  font-size: 9.5pt;
+}
+
+/* ─── Projects ─── */
+
+.project-name {
+  font-weight: 700;
+}
+
+/* ─── Volunteer ─── */
+
+.volunteer-item {
+  text-align: justify;
+  margin-bottom: 4px;
+}
+
+.vol-title {
+  font-weight: 700;
+}
+
+/* ─── Additional ─── */
+
+.additional-line {
+  margin-bottom: 1px;
+}
+
+.additional-label {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ─── Print ─── */
+
+@media print {
+  .work-entry { page-break-inside: avoid; }
+  .edu-entry  { page-break-inside: avoid; }
+  .section-title { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+  <div class="resume">
+    
+    <header class="header">
+      <div class="header-left">
+        <h1 class="name">Ebenezer Isaac</h1>
+        <div class="label">Software Developer · Web/Application Developer · Full-stack (Java/JavaScript)</div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-line">London, UK <i class="fa-solid fa-location-dot"></i></div>
+        <div class="contact-line">+44 75010 53232 <i class="fa-solid fa-square-phone"></i></div>
+        <div class="contact-line">ebnezr.isaac@gmail.com <i class="fa-solid fa-envelope"></i></div>
+        <div class="contact-line">ebenezer-isaac.com <i class="fa-solid fa-globe"></i></div>
+        <div class="contact-line">ebnezr-isaac <i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="contact-line">ebenezer-isaac <i class="fa-brands fa-github"></i></div>
+      </div>
+    </header>
+    <hr class="header-rule" />
+    <div class="summary">Web/Application Developer with 3 years’ experience in both enterprise SAP and full stack web development, now pursuing a M.Sc. in Systems Engineering for IoT at UCL. Shipped RTL enablement and 240+ Carbon Design System v2 migrations for IBM.com, automated support workflows, and delivered production-grade university portals. Passionate about building automation tools to improve developer productivity and system efficiency.</div>
+    
+    <h2 class="section-title">Core Skills</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item">
+        <span class="skill-name">Languages/Frameworks:</span> JavaScript, Java, PHP, Node.Js, Flutter, Python, HTML, CSS, JSON, XML, jQuery
+      </div>
+      <div class="bullet-item">
+        <span class="skill-name">Platforms:</span> AEM Sites, Sling, OSGi, AWS, GCP KMS
+      </div>
+      <div class="bullet-item">
+        <span class="skill-name">Data:</span> Firebase, MySQL, MongoDB
+      </div>
+      <div class="bullet-item">
+        <span class="skill-name">Tools/Libraries/Devices:</span> REST APIs, React, GitHub, Google Tink, Arduino, Raspberry Pi
+      </div>
+    </div>
+    
+    <h2 class="section-title">Experience</h2>
+    <div class="section-body">
+      
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">IBM India Private Limited - AEM Sites Application Developer</div>
+        <div class="work-duration">Duration: November 2023 to July 2025</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: AEM Cloud, Java, Node.Js, HTML, CSS, JavaScript, GitHub, Python</div>
+        <div class="work-client">Client: IBM.com</div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Led roughly 50% of all RTL enablement code changes for IBM.com in a 3-person team, and proposed alternative component implementations to de-risk project timelines.</li>
+        <li>Built a Node.js tool to map dependencies across 240+ AEM components, cutting issue-triage time by ~70%; complemented with Python automation that reduced planning by ~1 week.</li>
+        <li>Led Carbon Design System v2 UI modernization for an 8-person team; mentored developers in CSS/Sass and unblocked three complex UI components.</li>
+        <li>Published an AEM URL Switcher Chrome extension to compare the same page across multiple environments/versions, accelerating multi-environment testing.</li>
+        <li>Customized three AEM Commons DAM asset reports with dynamic parameters to support Adobe Cloud content operations.</li>
+      </ul>
+    </div>
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">IBM India Private Limited - SAP BI AMS BW Consultant</div>
+        <div class="work-duration">Duration: September 2022 to October 2023</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: SAP BW, Python</div>
+        <div class="work-client">Client: Volkswagen Financial Services</div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Cut average incident first-response time by ~80% by introducing Python script automation.</li>
+        <li>Identified a pattern of recurring issues and proactively escalated it, creating an 8-hour mitigation window that prevented a major P1 incident.</li>
+        <li>Reduced average ticket closure time by more than 24 hours.</li>
+      </ul>
+    </div>
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">College of Engineering - Guindy - Full Stack Developer Intern</div>
+        <div class="work-duration">Duration: July 2022 to August 2022</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: PHP, MySQL, HTML, CSS, JavaScript</div>
+        <div class="work-client">Client: Center for Academic Courses, Anna University</div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Digitized affiliated college fee records and enabled self-service status checks, with options to export data to Excel/PDF.</li>
+        <li>Developed a PDF Generator tool to template official letters, reducing manual work and errors by ~90%, and transferred know-how to staff for adoption.</li>
+      </ul>
+    </div>
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">IBM India Private Limited - Associate Application Developer Intern</div>
+        <div class="work-duration">Duration: January 2022 to June 2022</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: SAP S/4 HANA 2.0</div>
+        <div class="work-client"></div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Completed SAP S/4 HANA 2.0 certification and gained exposure to a full project lifecycle.</li>
+      </ul>
+    </div>
+    <div class="work-entry">
+      <div class="work-header">
+        <div class="work-title">Rishabh Software Private Limited, Vadodara - Machine Learning Intern</div>
+        <div class="work-duration">Duration: January 2020 to June 2020</div>
+      </div>
+      
+      <div class="work-meta">
+        <div class="work-tech">Tech-stack: PHP, MySQL, HTML, CSS, JavaScript, Keras, Tensorflow</div>
+        <div class="work-client"></div>
+      </div>
+      
+      <ul class="work-highlights">
+        <li>Built a Time &amp; Expense Tracker application and prototyped a machine-learning model on Identification of Intoxicated Faces.</li>
+      </ul>
+    </div>
+    </div>
+    
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item">
+        <span class="project-name">Low-Cost Automation of Existing Electric Devices (MycroLinks):</span> Mobile app + NodeMCU (ESP8266) with real-time control and state sync.
+      </div>
+      <div class="bullet-item">
+        <span class="project-name">Fingerprint Attendance Management System:</span> Distributed biometric devices with central admin portal; CSV/Excel exports and audit logs.
+      </div>
+      <div class="bullet-item">
+        <span class="project-name">Event Enrolment &amp; Online Payments (Deepwoods MCC):</span> Enrolment, ticketing, and payment confirmations with dashboard and exports.
+      </div>
+      <div class="bullet-item">
+        <span class="project-name">Android Password Manager:</span> On-device encryption with cloud-managed keys; Secure credential sync.
+      </div>
+      <div class="bullet-item">
+        <span class="project-name">Classroom Assignment Evaluator:</span> Gemini-based LLM for automated assignment evaluation and feedback using teacher-defined criteria.
+      </div>
+    </div>
+    
+    <h2 class="section-title">Education</h2>
+    <div class="section-body">
+      
+    <div class="edu-entry">
+      <div class="edu-header">
+        <div class="edu-degree">M.Sc Systems Engineering for the Internet of Things</div>
+        <div class="edu-year">2026</div>
+      </div>
+      <div class="edu-institution">University College London</div>
+      
+      <div class="edu-courses">
+        <div>Designing Sensor Systems</div><div>Real-World Multi-agent Systems</div>
+      </div>
+    </div>
+    <div class="edu-entry">
+      <div class="edu-header">
+        <div class="edu-degree">Master Computer Application</div>
+        <div class="edu-year">2022</div>
+      </div>
+      <div class="edu-institution">Anna University, College of Engineering – Guindy | 8.5 CGPA</div>
+      
+      <div class="edu-courses">
+        <div>Cyber Security and Internet of Things</div><div>Advanced Java</div><div>Machine Learning</div>
+      </div>
+    </div>
+    <div class="edu-entry">
+      <div class="edu-header">
+        <div class="edu-degree">Bachelor Computer Application</div>
+        <div class="edu-year">2020</div>
+      </div>
+      <div class="edu-institution">Maharaja Sayajirao University of Baroda | 7.5 CGPA</div>
+      
+      <div class="edu-courses">
+        <div>Advanced Java</div><div>Machine Learning</div><div>Android Development</div><div>Networking</div>
+      </div>
+    </div>
+    </div>
+    
+    <h2 class="section-title">Leadership &amp; Volunteering</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item volunteer-item">
+        <span class="vol-title">Volunteer Youth Mentor – Crossroads (2024–2024):</span> Co-led weekly teen sessions, designing activities that build communication and conflict-resolution skills while maintaining a safe, respectful environment. Followed safeguarding procedures, kept matters confidential, and sign-posted students to appropriate support.
+      </div>
+      <div class="bullet-item volunteer-item">
+        <span class="vol-title">MCA Class Representative – Anna University (2020–2022):</span> Elected cohort liaison; ran quick pulse-checks to surface concerns, presented consolidated feedback and solutions to faculty, mediated timetable/assessment conflicts, and ensured updates and actions were communicated and closed.
+      </div>
+    </div>
+    
+    <h2 class="section-title">Credentials</h2>
+    <div class="section-body">
+      
+      <div class="bullet-item">AWS Certified Cloud Practitioner</div>
+      <div class="bullet-item">Adobe Certified Expert - Adobe Experience Manager Sites Developer</div>
+      <div class="bullet-item">Adobe Certified Professional - Adobe Experience Manager Forms Backend Developer</div>
+      <div class="bullet-item">SAP Certified Development Specialist - ABAP for SAP HANA 2.0</div>
+      <div class="bullet-item">15+ additional Adobe, IBM, and Credly-verified certifications</div>
+    </div>
+    
+    <h2 class="section-title">Additional</h2>
+    <div class="section-body">
+      <div class="additional-line"><span class="additional-label">Languages:</span> English (IELTS 8.0), Tamil (Native), Hindi (Fluent)</div>
+      <div class="additional-line"><span class="additional-label">Referees:</span> Available on request</div>
+    </div>
+  </div>
+</body>
+</html>
