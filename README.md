@@ -3,10 +3,7 @@
 > Academic serif theme for [JSON Resume](https://jsonresume.org) — EB Garamond, small-caps headings, gold accents. Print-first, PDF-ready.
 
 [![npm version](https://img.shields.io/npm/v/jsonresume-theme-academic.svg)](https://www.npmjs.com/package/jsonresume-theme-academic)
-[![CI](https://github.com/ebenezer-isaac/jsonresume-theme-academic/actions/workflows/ci.yml/badge.svg)](https://github.com/ebenezer-isaac/jsonresume-theme-academic/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-![Preview](examples/preview.png)
 
 ## Features
 
