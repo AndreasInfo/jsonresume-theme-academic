@@ -32,6 +32,8 @@ exports[`render > renders full resume matching snapshot 1`] = `
       </div>
     </header>
     <hr class="header-rule" />
+    
+    <h2 class="section-title">Summary</h2>
     <div class="summary"><p>Innovative software engineer with 10+ years of experience building <mark class="highlight-yellow">scalable distributed systems</mark> and leading high-performance engineering teams. Passionate about data compression, algorithm optimization, and clean architecture.</p></div>
     
     <h2 class="section-title">Core Skills</h2>

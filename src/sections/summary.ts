@@ -1,8 +1,11 @@
 import { richText } from '../utils/text.js';
+import { sectionTitle } from './shared.js';
 
-export function renderSummary(summary: string | undefined): string {
+export function renderSummary(summary: string | undefined, heading: string): string {
   if (!summary) return '';
   const html = richText(summary, { block: true });
   if (!html) return '';
-  return `<div class="summary">${html}</div>`;
+  return `
+    ${sectionTitle(heading)}
+    <div class="summary">${html}</div>`;
 }

@@ -41,7 +41,7 @@ export function render(resume: ResumeSchema): string {
 <body>
   <div class="resume">
     ${renderHeader(basics)}
-    ${renderSummary(basics.summary)}
+    ${renderSummary(basics.summary, h.summary)}
     ${renderSkills(resume.skills, h.skills)}
     ${renderWork(resume.work, h.experience)}
     ${renderProjects(resume.projects, h.projects)}

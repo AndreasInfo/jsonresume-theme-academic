@@ -36,6 +36,7 @@ export const COUNTRY_NAMES: Readonly<Record<string, string>> = {
 };
 
 export const DEFAULT_HEADINGS: Readonly<Record<string, string>> = {
+  summary: 'Summary',
   skills: 'Core Skills',
   experience: 'Experience',
   projects: 'Selected Projects',
