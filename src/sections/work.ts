@@ -4,10 +4,16 @@ import { dateRange } from '../utils/dates.js';
 import { has, richText, stripHtml } from '../utils/text.js';
 import { sectionTitle } from './shared.js';
 
-/** Extract tech-stack and client from a work summary string. */
+/** Check whether summary uses structured Tech-stack / Client format. */
+function isStructuredMeta(text: string): boolean {
+  return /Tech-stack:\s/i.test(text) || /Client:\s/i.test(text);
+}
+
+/** Extract tech-stack and client from a structured work summary string. */
 function parseWorkMeta(summary: string | undefined): { techStack: string; client: string } {
   if (!summary) return { techStack: '', client: '' };
   const text = stripHtml(summary).replace(/\n/g, ' ').trim();
+  if (!isStructuredMeta(text)) return { techStack: '', client: '' };
 
   const clientMatch = text.match(/Client:\s*(.+)$/i);
   const client = clientMatch ? clientMatch[1].trim() : '';
@@ -22,6 +28,8 @@ function parseWorkMeta(summary: string | undefined): { techStack: string; client
 function renderWorkEntry(entry: ResumeWorkEntry): string {
   const { techStack, client } = parseWorkMeta(entry.summary);
   const duration = dateRange(entry.startDate, entry.endDate);
+  const plainSummary = entry.summary ? stripHtml(entry.summary).replace(/\n/g, ' ').trim() : '';
+  const isNarrative = plainSummary && !isStructuredMeta(plainSummary);
 
   return `
     <div class="work-entry">
@@ -38,6 +46,7 @@ function renderWorkEntry(entry: ResumeWorkEntry): string {
       </div>`
           : ''
       }
+      ${isNarrative ? `<p class="work-summary">${richText(entry.summary, { block: false })}</p>` : ''}
       ${
         has(entry.highlights)
           ? `

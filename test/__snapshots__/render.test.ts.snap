@@ -62,6 +62,7 @@ exports[`render > renders full resume matching snapshot 1`] = `
         <div class="work-client">Client: Various enterprise clients</div>
       </div>
       
+      
       <ul class="work-highlights">
         <li>Architected a <b>middle-out compression</b> algorithm achieving 5.2x Weissman score</li>
         <li>Led a team of 12 engineers delivering platform serving 50M+ daily requests</li>
@@ -78,6 +79,7 @@ exports[`render > renders full resume matching snapshot 1`] = `
         <div class="work-tech">Tech-stack: Java, Python, AWS, Apache Spark</div>
         <div class="work-client"></div>
       </div>
+      
       
       <ul class="work-highlights">
         <li>Built real-time data pipeline processing 2TB/day with <i>sub-second latency</i></li>

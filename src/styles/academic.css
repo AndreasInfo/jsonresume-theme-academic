@@ -173,6 +173,13 @@ body {
   flex-shrink: 0;
 }
 
+.work-summary {
+  margin: 2px 0 0;
+  font-style: italic;
+  font-size: 9.5pt;
+  color: #333;
+}
+
 .work-highlights {
   list-style: none;
   padding-left: 0;

@@ -49,6 +49,37 @@ describe('renderWork', () => {
     expect(html).toContain('Client: BigCorp');
   });
 
+  it('renders narrative summary as paragraph', () => {
+    const html = renderWork(
+      [{
+        name: 'Acme',
+        position: 'Dev',
+        summary: 'Full-stack development for Acme using React and Node.js.',
+      }],
+      'Experience',
+    );
+    expect(html).toContain('class="work-summary"');
+    expect(html).toContain('Full-stack development for Acme using React and Node.js.');
+  });
+
+  it('does not render narrative paragraph for structured Tech-stack summary', () => {
+    const html = renderWork(
+      [{ name: 'Acme', position: 'Dev', summary: 'Tech-stack: React, Node.js\nClient: BigCorp' }],
+      'Experience',
+    );
+    expect(html).not.toContain('class="work-summary"');
+    expect(html).toContain('Tech-stack: React, Node.js');
+    expect(html).toContain('Client: BigCorp');
+  });
+
+  it('does not render summary paragraph when summary is empty', () => {
+    const html = renderWork(
+      [{ name: 'Acme', position: 'Dev' }],
+      'Experience',
+    );
+    expect(html).not.toContain('class="work-summary"');
+  });
+
   it('renders highlights as list items', () => {
     const html = renderWork(
       [{
