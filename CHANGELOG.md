@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ebenezer-isaac/jsonresume-theme-academic/compare/v1.2.0...v1.3.0) (2026-03-07)
+
+
+### Features
+
+* render education courses inline with Coursework prefix ([57b1028](https://github.com/ebenezer-isaac/jsonresume-theme-academic/commit/57b10281fdaddbfe9977c4427bc26658eac412c5))
+
 # [1.2.0](https://github.com/ebenezer-isaac/jsonresume-theme-academic/compare/v1.1.0...v1.2.0) (2026-02-28)
 
 
