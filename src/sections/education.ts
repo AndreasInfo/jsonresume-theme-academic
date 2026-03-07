@@ -29,10 +29,7 @@ function renderEducationEntry(entry: ResumeEducationEntry): string {
       ${entry.institution ? `<div class="edu-institution">${esc(instLine)}</div>` : ''}
       ${
         has(entry.courses)
-          ? `
-      <div class="edu-courses">
-        ${entry.courses.map((c) => `<div>${richText(c)}</div>`).join('')}
-      </div>`
+          ? `<div class="edu-courses">Coursework: ${entry.courses.map((c) => richText(c)).join(', ')}</div>`
           : ''
       }
     </div>`;

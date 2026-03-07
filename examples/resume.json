@@ -1,56 +1,304 @@
 {
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Senior Software Engineer",
-    "email": "richard@piedpiper.com",
-    "phone": "+1 (555) 123-4567",
-    "url": "https://richardhendriks.dev",
-    "summary": "Innovative software engineer with 10+ years of experience building scalable distributed systems and leading high-performance engineering teams.",
+    "name": "Ebenezer Isaac",
+    "label": "Software Developer · Web/Application Developer · Full-stack (Java/JavaScript)",
+    "email": "ebnezr.isaac@gmail.com",
+    "phone": "+44 75010 53232",
+    "url": "https://ebenezer-isaac.com",
+    "summary": "Web/Application Developer with 3 years’ experience in both enterprise SAP and full stack web development, now pursuing a M.Sc. in Systems Engineering for IoT at UCL. Shipped RTL enablement and 240+ Carbon Design System v2 migrations for IBM.com, automated support workflows, and delivered production-grade university portals. Passionate about building automation tools to improve developer productivity and system efficiency.",
     "location": {
-      "city": "San Francisco",
-      "region": "CA",
-      "countryCode": "US"
+      "city": "London",
+      "countryCode": "GB",
+      "region": "UK"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "richardhendriks"
+        "username": "ebnezr-isaac",
+        "url": "https://linkedin.com/in/ebnezr-isaac"
       },
       {
         "network": "GitHub",
-        "username": "richardhendriks"
+        "username": "ebenezer-isaac",
+        "url": "https://github.com/ebenezer-isaac"
       }
     ]
   },
-  "skills": [
-    {
-      "name": "Languages",
-      "keywords": ["TypeScript", "Python", "Go", "Rust"]
-    },
-    {
-      "name": "Infrastructure",
-      "keywords": ["AWS", "Kubernetes", "Docker", "Terraform"]
-    }
-  ],
   "work": [
     {
-      "name": "Pied Piper",
-      "position": "CTO & Co-Founder",
-      "startDate": "2019-03",
-      "summary": "Tech-stack: TypeScript, Go, Kubernetes, PostgreSQL",
+      "name": "IBM India Private Limited",
+      "position": "AEM Sites Application Developer",
+      "startDate": "2023-11",
+      "endDate": "2025-07",
+      "summary": "Tech-stack: AEM Cloud, Java, Node.Js, HTML, CSS, JavaScript, GitHub, Python Client: IBM.com",
       "highlights": [
-        "Architected middle-out compression algorithm achieving 5.2x Weissman score",
-        "Led a team of 12 engineers delivering platform serving 50M+ daily requests"
+        "Led roughly 50% of all RTL enablement code changes for IBM.com in a 3-person team, and proposed alternative component implementations to de-risk project timelines.",
+        "Built a Node.js tool to map dependencies across 240+ AEM components, cutting issue-triage time by ~70%; complemented with Python automation that reduced planning by ~1 week.",
+        "Led Carbon Design System v2 UI modernization for an 8-person team; mentored developers in CSS/Sass and unblocked three complex UI components.",
+        "Published an AEM URL Switcher Chrome extension to compare the same page across multiple environments/versions, accelerating multi-environment testing.",
+        "Customized three AEM Commons DAM asset reports with dynamic parameters to support Adobe Cloud content operations."
       ]
+    },
+    {
+      "name": "IBM India Private Limited",
+      "position": "SAP BI AMS BW Consultant",
+      "startDate": "2022-09",
+      "endDate": "2023-10",
+      "summary": "Tech-stack: SAP BW, Python Client: Volkswagen Financial Services",
+      "highlights": [
+        "Cut average incident first-response time by ~80% by introducing Python script automation.",
+        "Identified a pattern of recurring issues and proactively escalated it, creating an 8-hour mitigation window that prevented a major P1 incident.",
+        "Reduced average ticket closure time by more than 24 hours."
+      ]
+    },
+    {
+      "name": "College of Engineering - Guindy",
+      "position": "Full Stack Developer Intern",
+      "startDate": "2022-07",
+      "endDate": "2022-08",
+      "summary": "Tech-stack: PHP, MySQL, HTML, CSS, JavaScript Client: Center for Academic Courses, Anna University",
+      "highlights": [
+        "Digitized affiliated college fee records and enabled self-service status checks, with options to export data to Excel/PDF.",
+        "Developed a PDF Generator tool to template official letters, reducing manual work and errors by ~90%, and transferred know-how to staff for adoption."
+      ]
+    },
+    {
+      "name": "IBM India Private Limited",
+      "position": "Associate Application Developer Intern",
+      "startDate": "2022-01",
+      "endDate": "2022-06",
+      "summary": "Tech-stack: SAP S/4 HANA 2.0",
+      "highlights": [
+        "Completed SAP S/4 HANA 2.0 certification and gained exposure to a full project lifecycle."
+      ]
+    },
+    {
+      "name": "Rishabh Software Private Limited, Vadodara",
+      "position": "Machine Learning Intern",
+      "startDate": "2020-01",
+      "endDate": "2020-06",
+      "summary": "Tech-stack: PHP, MySQL, HTML, CSS, JavaScript, Keras, Tensorflow",
+      "highlights": [
+        "Built a Time & Expense Tracker application and prototyped a machine-learning model on Identification of Intoxicated Faces."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Crossroads",
+      "position": "Volunteer Youth Mentor",
+      "startDate": "2024",
+      "endDate": "2024",
+      "summary": "Co-led weekly teen sessions, designing activities that build communication and conflict-resolution skills while maintaining a safe, respectful environment. Followed safeguarding procedures, kept matters confidential, and sign-posted students to appropriate support."
+    },
+    {
+      "organization": "Anna University",
+      "position": "MCA Class Representative",
+      "startDate": "2020",
+      "endDate": "2022",
+      "summary": "Elected cohort liaison; ran quick pulse-checks to surface concerns, presented consolidated feedback and solutions to faculty, mediated timetable/assessment conflicts, and ensured updates and actions were communicated and closed."
     }
   ],
   "education": [
     {
-      "institution": "Stanford University",
-      "area": "Computer Science",
-      "studyType": "M.S.",
-      "endDate": "2016-06",
-      "score": "GPA: 3.92/4.0"
+      "institution": "University College London",
+      "area": "Systems Engineering for the Internet of Things",
+      "studyType": "M.Sc",
+      "startDate": "2025",
+      "endDate": "2026",
+      "courses": [
+        "Designing Sensor Systems",
+        "Real-World Multi-agent Systems"
+      ]
+    },
+    {
+      "institution": "Anna University, College of Engineering – Guindy",
+      "area": "Computer Application",
+      "studyType": "Master",
+      "startDate": "2020",
+      "endDate": "2022",
+      "score": "8.5 CGPA",
+      "courses": [
+        "Cyber Security and Internet of Things",
+        "Advanced Java",
+        "Machine Learning"
+      ]
+    },
+    {
+      "institution": "Maharaja Sayajirao University of Baroda",
+      "area": "Computer Application",
+      "studyType": "Bachelor",
+      "startDate": "2017",
+      "endDate": "2020",
+      "score": "7.5 CGPA",
+      "courses": [
+        "Advanced Java",
+        "Machine Learning",
+        "Android Development",
+        "Networking"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner"
+    },
+    {
+      "name": "Adobe Certified Expert - Adobe Experience Manager Sites Developer"
+    },
+    {
+      "name": "Adobe Certified Professional - Adobe Experience Manager Forms Backend Developer"
+    },
+    {
+      "name": "SAP Certified Development Specialist - ABAP for SAP HANA 2.0"
+    },
+    {
+      "name": "15+ additional Adobe, IBM, and Credly-verified certifications"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages/Frameworks",
+      "keywords": [
+        "JavaScript",
+        "Java",
+        "PHP",
+        "Node.Js",
+        "Flutter",
+        "Python",
+        "HTML",
+        "CSS",
+        "JSON",
+        "XML",
+        "jQuery"
+      ]
+    },
+    {
+      "name": "Platforms",
+      "keywords": [
+        "AEM Sites",
+        "Sling",
+        "OSGi",
+        "AWS",
+        "GCP KMS"
+      ]
+    },
+    {
+      "name": "Data",
+      "keywords": [
+        "Firebase",
+        "MySQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Tools/Libraries/Devices",
+      "keywords": [
+        "REST APIs",
+        "React",
+        "GitHub",
+        "Google Tink",
+        "Arduino",
+        "Raspberry Pi"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "IELTS 8.0"
+    },
+    {
+      "language": "Tamil",
+      "fluency": "Native"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Weight Training"
+    },
+    {
+      "name": "Guitar"
+    },
+    {
+      "name": "Trekking"
+    },
+    {
+      "name": "Swimming"
+    },
+    {
+      "name": "Cycling"
+    },
+    {
+      "name": "Marathon Running"
+    }
+  ],
+  "references": [
+    {
+      "name": "Available on request"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Low-Cost Automation of Existing Electric Devices (MycroLinks)",
+      "description": "Mobile app + NodeMCU (ESP8266) with real-time control and state sync.",
+      "keywords": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Arduino"
+      ],
+      "url": "https://github.com/ebenezer-isaac/mycrolinks"
+    },
+    {
+      "name": "Fingerprint Attendance Management System",
+      "description": "Distributed biometric devices with central admin portal; CSV/Excel exports and audit logs.",
+      "keywords": [
+        "Java Web",
+        "Python",
+        "Raspberry Pi",
+        "Arduino",
+        "MySQL",
+        "JS/CSS"
+      ],
+      "url": "https://github.com/ebenezer-isaac/cerberus-web"
+    },
+    {
+      "name": "Event Enrolment & Online Payments (Deepwoods MCC)",
+      "description": "Enrolment, ticketing, and payment confirmations with dashboard and exports.",
+      "keywords": [
+        "PHP",
+        "MySQL",
+        "InstaMojo",
+        "jQuery",
+        "SEO",
+        "Bootstrap"
+      ],
+      "url": "https://github.com/ebenezer-isaac/deepwoods-mcc.com"
+    },
+    {
+      "name": "Android Password Manager",
+      "description": "On-device encryption with cloud-managed keys; Secure credential sync.",
+      "keywords": [
+        "Android",
+        "Google Tink",
+        "GCP KMS",
+        "Node REST API",
+        "Firebase"
+      ],
+      "url": "https://github.com/ebenezer-isaac/android-music-player"
+    },
+    {
+      "name": "Classroom Assignment Evaluator",
+      "description": "Gemini-based LLM for automated assignment evaluation and feedback using teacher-defined criteria.",
+      "keywords": [
+        "Flutter",
+        "Firebase"
+      ]
     }
   ]
 }

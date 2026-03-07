@@ -9,27 +9,32 @@ function isStructuredMeta(text: string): boolean {
   return /Tech-stack:\s/i.test(text) || /Client:\s/i.test(text);
 }
 
-/** Extract tech-stack and client from a structured work summary string. */
-function parseWorkMeta(summary: string | undefined): { techStack: string; client: string } {
-  if (!summary) return { techStack: '', client: '' };
+/** Extract tech-stack, client, and any remaining narrative from a work summary. */
+function parseWorkMeta(summary: string | undefined): {
+  techStack: string;
+  client: string;
+  narrative: string;
+} {
+  if (!summary) return { techStack: '', client: '', narrative: '' };
   const text = stripHtml(summary).replace(/\n/g, ' ').trim();
-  if (!isStructuredMeta(text)) return { techStack: '', client: '' };
+  if (!isStructuredMeta(text)) return { techStack: '', client: '', narrative: text };
 
-  const clientMatch = text.match(/Client:\s*(.+)$/i);
+  let remaining = text;
+
+  const clientMatch = remaining.match(/Client:\s*(.+)$/i);
   const client = clientMatch ? clientMatch[1].trim() : '';
+  if (clientMatch) remaining = remaining.slice(0, clientMatch.index).trim();
 
-  const techPart = clientMatch ? text.slice(0, clientMatch.index).trim() : text;
-  const techMatch = techPart.match(/Tech-stack:\s*(.+)/i);
+  const techMatch = remaining.match(/Tech-stack:\s*(.+)/i);
   const techStack = techMatch ? techMatch[1].trim() : '';
+  if (techMatch) remaining = remaining.slice(0, techMatch.index).trim();
 
-  return { techStack, client };
+  return { techStack, client, narrative: remaining };
 }
 
 function renderWorkEntry(entry: ResumeWorkEntry): string {
-  const { techStack, client } = parseWorkMeta(entry.summary);
+  const { techStack, client, narrative } = parseWorkMeta(entry.summary);
   const duration = dateRange(entry.startDate, entry.endDate);
-  const plainSummary = entry.summary ? stripHtml(entry.summary).replace(/\n/g, ' ').trim() : '';
-  const isNarrative = plainSummary && !isStructuredMeta(plainSummary);
 
   return `
     <div class="work-entry">
@@ -46,7 +51,7 @@ function renderWorkEntry(entry: ResumeWorkEntry): string {
       </div>`
           : ''
       }
-      ${isNarrative ? `<p class="work-summary">${richText(entry.summary, { block: false })}</p>` : ''}
+      ${narrative ? `<p class="work-summary">${richText(narrative, { block: false })}</p>` : ''}
       ${
         has(entry.highlights)
           ? `
