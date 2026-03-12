@@ -1,7 +1,8 @@
 import { MONTHS, COUNTRY_NAMES } from '../constants.js';
 
 export function formatDate(dateStr: string | null | undefined): string {
-  if (!dateStr) return '';
+  if (!dateStr) return 'Present';
+  if (dateStr.toLowerCase() === 'present') return 'Present';
   const parts = String(dateStr).split('-');
   if (parts.length === 1) return parts[0];
   const year = parts[0];
@@ -11,8 +12,8 @@ export function formatDate(dateStr: string | null | undefined): string {
 
 export function dateRange(start: string | null | undefined, end: string | null | undefined): string {
   const s = formatDate(start);
-  const e = end ? formatDate(end) : '';
-  if (!s) return '';
+  const e = formatDate(end);
+  if (!s || s === 'Present') return ''; // start date should not be empty or present
   if (!e) return s;
   return `${s} to ${e}`;
 }

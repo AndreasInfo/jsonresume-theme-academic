@@ -2,10 +2,11 @@ import { describe, it, expect } from 'vitest';
 import { formatDate, dateRange, regionName } from '../../src/utils/dates';
 
 describe('formatDate', () => {
-  it('returns empty string for falsy input', () => {
-    expect(formatDate('')).toBe('');
-    expect(formatDate(null)).toBe('');
-    expect(formatDate(undefined)).toBe('');
+  it('returns "Present" string for falsy input', () => {
+    expect(formatDate('')).toBe('Present');
+    expect(formatDate(null)).toBe('Present');
+    expect(formatDate(undefined)).toBe('Present');
+    expect(formatDate('present')).toBe('Present');
   });
 
   it('returns year-only for single-part dates', () => {
@@ -29,14 +30,15 @@ describe('formatDate', () => {
 });
 
 describe('dateRange', () => {
-  it('returns empty string when no start', () => {
+  it('returns empty string when no start or start is "Present"', () => {
     expect(dateRange('', '2024-06')).toBe('');
     expect(dateRange(null, '2024-06')).toBe('');
+    expect(dateRange('present', '2024-06')).toBe('');
   });
 
-  it('returns start only when no end', () => {
-    expect(dateRange('2024-01', '')).toBe('January 2024');
-    expect(dateRange('2024-01', null)).toBe('January 2024');
+  it('returns start to "Present" when no end', () => {
+    expect(dateRange('2024-01', '')).toBe('January 2024 to Present');
+    expect(dateRange('2024-01', null)).toBe('January 2024 to Present');
   });
 
   it('formats full range', () => {

@@ -56,7 +56,7 @@ exports[`render > renders full resume matching snapshot 1`] = `
     <div class="work-entry">
       <div class="work-header">
         <div class="work-title">Pied Piper - CTO &amp; Co-Founder</div>
-        <div class="work-duration">Duration: March 2019</div>
+        <div class="work-duration">Duration: March 2019 to Present</div>
       </div>
       
       <div class="work-meta">
