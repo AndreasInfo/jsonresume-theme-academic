@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/ebenezer-isaac/jsonresume-theme-academic/compare/v1.3.0...v1.3.1) (2026-03-12)
+
+
+### Bug Fixes
+
+* display Present for missing or present end dates ([14ae7bf](https://github.com/ebenezer-isaac/jsonresume-theme-academic/commit/14ae7bf432e99db79262296f6c0923399927344e))
+
 # [1.3.0](https://github.com/ebenezer-isaac/jsonresume-theme-academic/compare/v1.2.0...v1.3.0) (2026-03-07)
 
 
