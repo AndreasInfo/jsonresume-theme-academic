@@ -47,7 +47,9 @@ await page.pdf(pdfRenderOptions);
 
 ## Customization
 
-### Section Headings
+### Configuration
+
+#### Section Headings
 
 Override default headings via `meta.headings`:
 
@@ -64,6 +66,25 @@ Override default headings via `meta.headings`:
 ```
 
 Available keys: `skills`, `experience`, `projects`, `education`, `volunteer`, `certifications`, `additional`
+
+#### Months
+
+Override default months via `meta.months`:
+
+```json
+{
+  "meta": {
+    "months": {
+      "JAN": "Venanuary",
+      "JUN": "Dry June",
+      "NOV": "Movember",
+      "DEC": "No Nut December"
+    }
+  }
+}
+```
+
+Available keys: `JAN`, `FEB`, `MAR`, `APR`, `MAY`, `JUN`, `JUL`, `AUG`, `SEP`, `OCT`, `NOV`, `DEC`, 
 
 ### PDF Rendering Options
 
