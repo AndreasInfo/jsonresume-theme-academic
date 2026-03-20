@@ -22,7 +22,7 @@ export function dateRange(
   const e = formatDate(end, months);
   if (!s || s === 'Present') return ''; // start date should not be empty or present
   if (!e) return s;
-  return `${s} to ${e}`;
+  return `${s} - ${e}`;
 }
 
 export function regionName(code: string | null | undefined): string {

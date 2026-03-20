@@ -38,12 +38,12 @@ describe('dateRange', () => {
   });
 
   it('returns start to "Present" when no end', () => {
-    expect(dateRange('2024-01', '', MONTHS)).toBe('January 2024 to Present');
-    expect(dateRange('2024-01', null, MONTHS)).toBe('January 2024 to Present');
+    expect(dateRange('2024-01', '', MONTHS)).toBe('January 2024 - Present');
+    expect(dateRange('2024-01', null, MONTHS)).toBe('January 2024 - Present');
   });
 
   it('formats full range', () => {
-    expect(dateRange('2020-03', '2024-06', MONTHS)).toBe('March 2020 to June 2024');
+    expect(dateRange('2020-03', '2024-06', MONTHS)).toBe('March 2020 - June 2024');
   });
 });
 

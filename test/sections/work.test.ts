@@ -34,7 +34,7 @@ describe('renderWork', () => {
       'Experience',
       MONTHS,
     );
-    expect(html).toContain('Duration: January 2020 to June 2023');
+    expect(html).toContain('Duration: January 2020 - June 2023');
   });
 
   it('parses tech-stack from summary', () => {
