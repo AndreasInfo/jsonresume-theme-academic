@@ -1,6 +1,13 @@
 # jsonresume-theme-academic
 
-> Academic serif theme for [JSON Resume](https://jsonresume.org) with EB Garamond typography, small caps headings, and gold accents. Designed for print and PDF.
+> **This is a personal fork** — not published to npm. Install locally before use:
+>
+> ```bash
+> npm run build
+> npm install -g .
+> ```
+
+Academic serif theme for [JSON Resume](https://jsonresume.org) with EB Garamond typography, small caps headings, and gold accents. Designed for print and PDF.
 
 [![npm version](https://img.shields.io/npm/v/jsonresume-theme-academic.svg)](https://www.npmjs.com/package/jsonresume-theme-academic)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
