@@ -15,7 +15,7 @@ export function renderProjects(
         .map((p) => {
           const desc = richText(p.description);
           return `
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">${esc(p.name)}:</span> ${desc}
       </div>`;
         })

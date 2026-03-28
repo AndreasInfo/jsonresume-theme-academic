@@ -94,10 +94,10 @@ exports[`render > renders full resume matching snapshot 1`] = `
     <h2 class="section-title">Selected Projects</h2>
     <div class="section-body">
       
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">Piper Compression SDK:</span> Open-source compression library used by <a href="https://example.com" target="_blank" rel="noopener">500+ companies</a> worldwide. Features adaptive encoding and streaming support.
       </div>
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">DevMetrics Dashboard:</span> Real-time engineering productivity dashboard tracking deploy frequency, lead time, and MTTR across 20+ microservices.
       </div>
     </div>

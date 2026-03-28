@@ -244,6 +244,11 @@ body {
 
 /* ─── Projects ─── */
 
+.project-entry {
+  margin-bottom: 2px;
+  text-align: justify;
+}
+
 .project-name {
   font-weight: 700;
 }
