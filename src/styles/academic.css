@@ -271,13 +271,13 @@ body {
 
 /* ─── Additional ─── */
 
-.additional-line {
-  margin-bottom: 1px;
+.additional-entry {
+  margin-bottom: 2px;
+  text-align: justify;
 }
 
 .additional-label {
   font-weight: 700;
-  font-style: italic;
 }
 
 /* ─── Print ─── */

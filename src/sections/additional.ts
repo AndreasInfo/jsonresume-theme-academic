@@ -12,7 +12,7 @@ export function renderAdditional(resume: ResumeSchema, heading: string): string 
       const label = interest.name || 'Interests';
       if (keywords) {
         parts.push(
-          `<div class="additional-line"><span class="additional-label">${esc(label)}:</span> ${esc(keywords)}</div>`,
+          `<div class="additional-entry"><span class="additional-label">${esc(label)}:</span> ${esc(keywords)}</div>`,
         );
       }
     }
@@ -23,13 +23,13 @@ export function renderAdditional(resume: ResumeSchema, heading: string): string 
       .map((l) => `${l.language}${l.fluency ? ` (${l.fluency})` : ''}`)
       .join(', ');
     parts.push(
-      `<div class="additional-line"><span class="additional-label">Languages:</span> ${esc(langStr)}</div>`,
+      `<div class="additional-entry"><span class="additional-label">Languages:</span> ${esc(langStr)}</div>`,
     );
   }
 
   if (has(resume.references)) {
     parts.push(
-      `<div class="additional-line"><span class="additional-label">Referees:</span> Available on request</div>`,
+      `<div class="additional-entry"><span class="additional-label">Referees:</span> Available on request</div>`,
     );
   }
 
