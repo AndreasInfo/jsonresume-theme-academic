@@ -227,19 +227,25 @@ body {
   gap: 8px;
 }
 
-.edu-degree {
-  font-weight: 700;
+.edu-title {
   font-size: 10pt;
 }
 
-.edu-year {
-  font-size: 10pt;
+.edu-degree {
   font-weight: 700;
+}
+
+.edu-institution {
+  font-style: italic;
+}
+
+.edu-year {
+  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-.edu-institution {
+.edu-score {
   font-size: 9.5pt;
 }
 

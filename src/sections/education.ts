@@ -1,7 +1,7 @@
 import type { ResumeEducationEntry } from '../types/resume.js';
 import { esc } from '../utils/escape.js';
-import { formatDate } from '../utils/dates.js';
-import { has, richText } from '../utils/text.js';
+import { formatDate, dateRange } from '../utils/dates.js';
+import { has } from '../utils/text.js';
 import { sectionTitle } from './shared.js';
 
 function renderEducationEntry(
@@ -10,31 +10,21 @@ function renderEducationEntry(
 ): string {
   const degree = [entry.studyType, entry.area].filter(Boolean).join(' ');
 
-  let yearDisplay = '';
-  if (entry.endDate) {
-    yearDisplay = formatDate(entry.endDate, months);
-  } else if (entry.startDate) {
-    const year = parseInt(String(entry.startDate).split('-')[0], 10);
-    const currentYear = new Date().getFullYear();
-    yearDisplay = year >= currentYear ? `Expected ${formatDate(entry.startDate, months)}` : formatDate(entry.startDate, months);
-  }
+  const yearDisplay = entry.startDate
+    ? dateRange(entry.startDate, entry.endDate, months)
+    : formatDate(entry.endDate, months);
 
-  const instParts = [entry.institution];
-  if (entry.score) instParts.push(entry.score);
-  const instLine = instParts.filter(Boolean).join(' | ');
+  const title = [
+    degree ? `<span class="edu-degree">${esc(degree)}</span>` : '',
+    entry.institution ? `<span class="edu-institution">${esc(entry.institution)}</span>` : '',
+  ].filter(Boolean).join(' @ ');
 
   return `
     <div class="edu-entry">
       <div class="edu-header">
-        <div class="edu-degree">${esc(degree)}</div>
+        <div class="edu-title">${title}</div>
         <div class="edu-year">${esc(yearDisplay)}</div>
       </div>
-      ${entry.institution ? `<div class="edu-institution">${esc(instLine)}</div>` : ''}
-      ${
-        has(entry.courses)
-      ? `<div class="edu-courses">Coursework: ${entry.courses.map((c) => richText(c)).join(', ')}</div>`
-      : ''
-    }
     </div>`;
 }
 

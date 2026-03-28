@@ -17,7 +17,7 @@ describe('renderEducation', () => {
     expect(html).toContain('B.S. Computer Science');
   });
 
-  it('renders end date', () => {
+  it('renders end date only when no start date', () => {
     const html = renderEducation(
       [{ institution: 'MIT', endDate: '2024-05' }],
       'Education',
@@ -26,32 +26,30 @@ describe('renderEducation', () => {
     expect(html).toContain('May 2024');
   });
 
-  it('renders "Expected" for future start dates with no end date', () => {
-    const futureYear = new Date().getFullYear() + 2;
+  it('renders date range when start and end date provided', () => {
     const html = renderEducation(
-      [{ institution: 'MIT', startDate: `${futureYear}-06` }],
+      [{ institution: 'MIT', startDate: '2020-09', endDate: '2024-05' }],
       'Education',
       MONTHS,
     );
-    expect(html).toContain('Expected');
+    expect(html).toContain('September 2020 - May 2024');
   });
 
-  it('renders institution with score', () => {
+  it('renders institution', () => {
     const html = renderEducation(
-      [{ institution: 'Stanford', score: 'GPA: 3.9/4.0' }],
+      [{ institution: 'Stanford' }],
       'Education',
       MONTHS,
     );
-    expect(html).toContain('Stanford | GPA: 3.9/4.0');
+    expect(html).toContain('Stanford');
   });
 
-  it('renders courses', () => {
+  it('renders degree @ institution', () => {
     const html = renderEducation(
-      [{ institution: 'MIT', courses: ['Algorithms', 'Data Structures'] }],
+      [{ studyType: 'B.S.', area: 'Computer Science', institution: 'MIT' }],
       'Education',
       MONTHS,
     );
-    expect(html).toContain('Algorithms');
-    expect(html).toContain('Data Structures');
+    expect(html).toMatch(/B\.S\. Computer Science.*@.*MIT/);
   });
 });

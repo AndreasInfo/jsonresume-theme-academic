@@ -110,16 +110,12 @@ exports[`render > renders full resume matching snapshot 1`] = `
         <div class="edu-title"><span class="edu-degree">M.S. Computer Science</span> @ <span class="edu-institution">Stanford University</span></div>
         <div class="edu-year">September 2014 - June 2016</div>
       </div>
-      <div class="edu-institution">Stanford University | GPA: 3.92/4.0</div>
-      <div class="edu-courses">Coursework: Advanced Algorithms, Distributed Systems, Machine Learning</div>
     </div>
     <div class="edu-entry">
       <div class="edu-header">
         <div class="edu-title"><span class="edu-degree">B.S. Computer Science &amp; Mathematics</span> @ <span class="edu-institution">MIT</span></div>
         <div class="edu-year">September 2010 - May 2014</div>
       </div>
-      <div class="edu-institution">MIT</div>
-      
     </div>
     </div>
     
