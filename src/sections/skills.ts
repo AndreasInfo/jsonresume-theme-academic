@@ -11,7 +11,7 @@ export function renderSkills(skills: readonly ResumeSkill[] | undefined, heading
       ${skills
         .map(
           (s) => `
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">${esc(s.name)}:</span> ${esc((s.keywords || []).join(', '))}
       </div>`,
         )

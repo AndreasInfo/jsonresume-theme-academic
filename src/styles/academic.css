@@ -125,6 +125,11 @@ body {
 
 /* ─── Skills ─── */
 
+.skill-entry {
+  margin-bottom: 2px;
+  text-align: justify;
+}
+
 .skill-name {
   font-weight: 700;
 }

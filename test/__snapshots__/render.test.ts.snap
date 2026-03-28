@@ -39,13 +39,13 @@ exports[`render > renders full resume matching snapshot 1`] = `
     <h2 class="section-title">Core Skills</h2>
     <div class="section-body">
       
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Languages:</span> TypeScript, Python, Go, Rust, C++
       </div>
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Infrastructure:</span> AWS, Kubernetes, Docker, Terraform, CI/CD
       </div>
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Frameworks:</span> React, Node.js, FastAPI, gRPC
       </div>
     </div>
