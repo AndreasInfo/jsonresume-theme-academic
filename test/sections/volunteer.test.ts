@@ -1,51 +1,55 @@
 import { describe, it, expect } from 'vitest';
 import { renderVolunteer } from '../../src/sections/volunteer';
+import { MONTHS } from '../../src/constants';
 
 describe('renderVolunteer', () => {
   it('returns empty for undefined/empty volunteer', () => {
-    expect(renderVolunteer(undefined, 'Volunteering')).toBe('');
-    expect(renderVolunteer([], 'Volunteering')).toBe('');
+    expect(renderVolunteer(undefined, 'Volunteering', MONTHS)).toBe('');
+    expect(renderVolunteer([], 'Volunteering', MONTHS)).toBe('');
   });
 
   it('renders section title', () => {
     const html = renderVolunteer(
       [{ organization: 'Red Cross', summary: 'Helped people' }],
       'Leadership & Volunteering',
+      MONTHS,
     );
     expect(html).toContain('Leadership &amp; Volunteering');
     expect(html).toContain('class="section-title"');
   });
 
-  it('renders organization with position and en-dash', () => {
+  it('renders position @ organization', () => {
     const html = renderVolunteer(
       [{ organization: 'Code.org', position: 'Mentor', summary: 'Mentored students' }],
       'Volunteering',
+      MONTHS,
     );
-    expect(html).toContain('Mentor');
-    expect(html).toContain('Code.org');
-    expect(html).toContain('\u2013');
+    expect(html).toMatch(/Mentor.*@.*Code\.org/);
   });
 
   it('renders organization without position', () => {
     const html = renderVolunteer(
       [{ organization: 'Red Cross', summary: 'Donated time' }],
       'Volunteering',
+      MONTHS,
     );
     expect(html).toContain('Red Cross');
   });
 
-  it('renders date range with en-dash', () => {
+  it('renders date range', () => {
     const html = renderVolunteer(
       [{ organization: 'NPO', startDate: '2020', endDate: '2024', summary: 'Work' }],
       'Volunteering',
+      MONTHS,
     );
-    expect(html).toContain('2020\u20132024');
+    expect(html).toContain('2020 - 2024');
   });
 
   it('renders start date only when no end date', () => {
     const html = renderVolunteer(
       [{ organization: 'NPO', startDate: '2020', summary: 'Work' }],
       'Volunteering',
+      MONTHS,
     );
     expect(html).toContain('2020');
   });
@@ -54,6 +58,7 @@ describe('renderVolunteer', () => {
     const html = renderVolunteer(
       [{ organization: 'NPO', summary: 'Work' }],
       'Volunteering',
+      MONTHS,
     );
     expect(html).not.toContain('(');
   });
@@ -62,6 +67,7 @@ describe('renderVolunteer', () => {
     const html = renderVolunteer(
       [{ organization: 'NPO', summary: '<b>Important</b> work' }],
       'Volunteering',
+      MONTHS,
     );
     expect(html).toContain('<b>Important</b>');
   });

@@ -56,7 +56,7 @@ export function render(resume: ResumeSchema): string {
     ${renderWork(resume.work, h.experience, m)}
     ${renderProjects(resume.projects, h.projects)}
     ${renderEducation(resume.education, h.education, m)}
-    ${renderVolunteer(resume.volunteer, h.volunteer)}
+    ${renderVolunteer(resume.volunteer, h.volunteer, m)}
     ${renderCertificates(resume.certificates, h.certifications)}
     ${renderAdditional(resume, h.additional)}
   </div>

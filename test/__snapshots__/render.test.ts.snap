@@ -55,7 +55,7 @@ exports[`render > renders full resume matching snapshot 1`] = `
       
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title"><span class="work-position">CTO &amp; Co-Founder</span> @ Pied Piper</div>
+        <div class="work-title"><span class="work-position">CTO &amp; Co-Founder</span> @ <span class="work-org">Pied Piper</span></div>
         <div class="work-duration">March 2019 - Present</div>
       </div>
       
@@ -73,7 +73,7 @@ exports[`render > renders full resume matching snapshot 1`] = `
     </div>
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title"><span class="work-position">Senior Software Engineer</span> @ Hooli</div>
+        <div class="work-title"><span class="work-position">Senior Software Engineer</span> @ <span class="work-org">Hooli</span></div>
         <div class="work-duration">June 2016 - February 2019</div>
       </div>
       
@@ -107,16 +107,16 @@ exports[`render > renders full resume matching snapshot 1`] = `
       
     <div class="edu-entry">
       <div class="edu-header">
-        <div class="edu-degree">M.S. Computer Science</div>
-        <div class="edu-year">June 2016</div>
+        <div class="edu-title"><span class="edu-degree">M.S. Computer Science</span> @ <span class="edu-institution">Stanford University</span></div>
+        <div class="edu-year">September 2014 - June 2016</div>
       </div>
       <div class="edu-institution">Stanford University | GPA: 3.92/4.0</div>
       <div class="edu-courses">Coursework: Advanced Algorithms, Distributed Systems, Machine Learning</div>
     </div>
     <div class="edu-entry">
       <div class="edu-header">
-        <div class="edu-degree">B.S. Computer Science &amp; Mathematics</div>
-        <div class="edu-year">May 2014</div>
+        <div class="edu-title"><span class="edu-degree">B.S. Computer Science &amp; Mathematics</span> @ <span class="edu-institution">MIT</span></div>
+        <div class="edu-year">September 2010 - May 2014</div>
       </div>
       <div class="edu-institution">MIT</div>
       
@@ -126,9 +126,14 @@ exports[`render > renders full resume matching snapshot 1`] = `
     <h2 class="section-title">Leadership &amp; Volunteering</h2>
     <div class="section-body">
       
-      <div class="bullet-item volunteer-item">
-        <span class="vol-title">Technical Mentor – Code.org (2020–2024):</span> Mentored underrepresented students in CS fundamentals and career development
+    <div class="volunteer-entry">
+      <div class="volunteer-header">
+        <div class="volunteer-title"><span class="volunteer-position">Technical Mentor</span> @ <span class="volunteer-org">Code.org</span></div>
+        <div class="volunteer-duration">2020 - 2024</div>
       </div>
+      <p class="volunteer-summary">Mentored underrepresented students in CS fundamentals and career development</p>
+      
+    </div>
     </div>
     
     <h2 class="section-title">Credentials</h2>
