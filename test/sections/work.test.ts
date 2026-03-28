@@ -24,8 +24,7 @@ describe('renderWork', () => {
       'Experience',
       MONTHS,
     );
-    expect(html).toContain('Acme Corp');
-    expect(html).toContain('Senior Developer');
+    expect(html).toMatch(/Senior Developer.*@.*Acme Corp/);
   });
 
   it('renders date range', () => {
@@ -34,7 +33,7 @@ describe('renderWork', () => {
       'Experience',
       MONTHS,
     );
-    expect(html).toContain('Duration: January 2020 - June 2023');
+    expect(html).toContain('January 2020 - June 2023');
   });
 
   it('parses tech-stack from summary', () => {

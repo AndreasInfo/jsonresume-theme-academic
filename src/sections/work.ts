@@ -42,8 +42,8 @@ function renderWorkEntry(
   return `
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title">${esc(entry.name)} - ${esc(entry.position)}</div>
-        <div class="work-duration">${duration ? `Duration: ${esc(duration)}` : ''}</div>
+        <div class="work-title">${entry.position ? `<span class="work-position">${esc(entry.position)}</span> @ ` : ''}<span class="work-org">${esc(entry.name)}</span></div>
+        <div class="work-duration">${duration ? `${esc(duration)}` : ''}</div>
       </div>
       ${
         techStack || client

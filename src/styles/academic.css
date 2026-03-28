@@ -144,8 +144,15 @@ body {
 }
 
 .work-title {
-  font-weight: 700;
   font-size: 10pt;
+}
+
+.work-position {
+  font-weight: 700;
+}
+
+.work-org {
+  font-style: italic;
 }
 
 .work-duration {
