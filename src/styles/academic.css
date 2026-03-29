@@ -86,9 +86,9 @@ body {
 
 .summary {
   font-style: italic;
-  font-size: 9pt;
+  font-size: 10pt;
   line-height: 1.38;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   text-align: justify;
 }
 
@@ -102,7 +102,7 @@ body {
   border-bottom: 1.5px solid #C4962C;
   padding-bottom: 1px;
   margin-top: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   color: #000;
   page-break-after: avoid;
 }
@@ -112,7 +112,7 @@ body {
 .bullet-item {
   position: relative;
   padding-left: 14px;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
 }
 
 .bullet-item::before {
@@ -126,7 +126,7 @@ body {
 /* ─── Skills ─── */
 
 .skill-entry {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   text-align: justify;
 }
 
@@ -148,10 +148,6 @@ body {
   gap: 8px;
 }
 
-.work-title {
-  font-size: 10pt;
-}
-
 .work-position {
   font-weight: 700;
 }
@@ -161,7 +157,6 @@ body {
 }
 
 .work-duration {
-  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -175,12 +170,10 @@ body {
 
 .work-tech {
   font-style: italic;
-  font-size: 9.5pt;
 }
 
 .work-client {
   font-style: italic;
-  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -188,7 +181,6 @@ body {
 .work-summary {
   margin: 2px 0 0;
   font-style: italic;
-  font-size: 9.5pt;
   color: #333;
 }
 
@@ -216,7 +208,7 @@ body {
 /* ─── Education ─── */
 
 .edu-entry {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   page-break-inside: avoid;
 }
 
@@ -225,10 +217,6 @@ body {
   justify-content: space-between;
   align-items: baseline;
   gap: 8px;
-}
-
-.edu-title {
-  font-size: 10pt;
 }
 
 .edu-degree {
@@ -240,23 +228,15 @@ body {
 }
 
 .edu-year {
-  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-.edu-score {
-  font-size: 9.5pt;
-}
-
-.edu-courses {
-  font-size: 9.5pt;
-}
 
 /* ─── Projects ─── */
 
 .project-entry {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   text-align: justify;
 }
 
@@ -278,10 +258,6 @@ body {
   gap: 8px;
 }
 
-.volunteer-title {
-  font-size: 10pt;
-}
-
 .volunteer-position {
   font-weight: 700;
 }
@@ -291,14 +267,13 @@ body {
 }
 
 .volunteer-duration {
-  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .volunteer-summary {
   margin: 2px 0 0;
-  font-size: 9.5pt;
+  font-style: italic;
   color: #333;
 }
 
@@ -326,7 +301,7 @@ body {
 /* ─── Additional ─── */
 
 .additional-entry {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   text-align: justify;
 }
 
@@ -334,10 +309,3 @@ body {
   font-weight: 700;
 }
 
-/* ─── Print ─── */
-
-@media print {
-  .work-entry { page-break-inside: avoid; }
-  .edu-entry  { page-break-inside: avoid; }
-  .section-title { page-break-after: avoid; }
-}
