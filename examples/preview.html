@@ -96,9 +96,9 @@ body {
 
 .summary {
   font-style: italic;
-  font-size: 9pt;
+  font-size: 10pt;
   line-height: 1.38;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   text-align: justify;
 }
 
@@ -112,7 +112,7 @@ body {
   border-bottom: 1.5px solid #C4962C;
   padding-bottom: 1px;
   margin-top: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   color: #000;
   page-break-after: avoid;
 }
@@ -122,7 +122,7 @@ body {
 .bullet-item {
   position: relative;
   padding-left: 14px;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
 }
 
 .bullet-item::before {
@@ -134,6 +134,11 @@ body {
 }
 
 /* ─── Skills ─── */
+
+.skill-entry {
+  margin-bottom: 7px;
+  text-align: justify;
+}
 
 .skill-name {
   font-weight: 700;
@@ -153,13 +158,15 @@ body {
   gap: 8px;
 }
 
-.work-title {
+.work-position {
   font-weight: 700;
-  font-size: 10pt;
+}
+
+.work-org {
+  font-style: italic;
 }
 
 .work-duration {
-  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -173,12 +180,10 @@ body {
 
 .work-tech {
   font-style: italic;
-  font-size: 9.5pt;
 }
 
 .work-client {
   font-style: italic;
-  font-size: 9.5pt;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -186,7 +191,6 @@ body {
 .work-summary {
   margin: 2px 0 0;
   font-style: italic;
-  font-size: 9.5pt;
   color: #333;
 }
 
@@ -214,7 +218,7 @@ body {
 /* ─── Education ─── */
 
 .edu-entry {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   page-break-inside: avoid;
 }
 
@@ -227,25 +231,24 @@ body {
 
 .edu-degree {
   font-weight: 700;
-  font-size: 10pt;
+}
+
+.edu-institution {
+  font-style: italic;
 }
 
 .edu-year {
-  font-size: 10pt;
-  font-weight: 700;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-.edu-institution {
-  font-size: 9.5pt;
-}
-
-.edu-courses {
-  font-size: 9.5pt;
-}
 
 /* ─── Projects ─── */
+
+.project-entry {
+  margin-bottom: 7px;
+  text-align: justify;
+}
 
 .project-name {
   font-weight: 700;
@@ -253,33 +256,69 @@ body {
 
 /* ─── Volunteer ─── */
 
-.volunteer-item {
-  text-align: justify;
-  margin-bottom: 4px;
+.volunteer-entry {
+  margin-bottom: 7px;
+  page-break-inside: avoid;
 }
 
-.vol-title {
+.volunteer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.volunteer-position {
   font-weight: 700;
+}
+
+.volunteer-org {
+  font-style: italic;
+}
+
+.volunteer-duration {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.volunteer-summary {
+  margin: 2px 0 0;
+  font-style: italic;
+  color: #333;
+}
+
+.volunteer-highlights {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 3px;
+}
+
+.volunteer-highlights li {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 3px;
+  text-align: justify;
+}
+
+.volunteer-highlights li::before {
+  content: '\25CB';
+  position: absolute;
+  left: 0;
+  font-size: 7pt;
+  top: 2.5px;
 }
 
 /* ─── Additional ─── */
 
-.additional-line {
-  margin-bottom: 1px;
+.additional-entry {
+  margin-bottom: 7px;
+  text-align: justify;
 }
 
 .additional-label {
   font-weight: 700;
-  font-style: italic;
 }
 
-/* ─── Print ─── */
-
-@media print {
-  .work-entry { page-break-inside: avoid; }
-  .edu-entry  { page-break-inside: avoid; }
-  .section-title { page-break-after: avoid; }
-}
 </style>
 </head>
 <body>
@@ -307,16 +346,16 @@ body {
     <h2 class="section-title">Core Skills</h2>
     <div class="section-body">
       
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Languages/Frameworks:</span> JavaScript, Java, PHP, Node.Js, Flutter, Python, HTML, CSS, JSON, XML, jQuery
       </div>
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Platforms:</span> AEM Sites, Sling, OSGi, AWS, GCP KMS
       </div>
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Data:</span> Firebase, MySQL, MongoDB
       </div>
-      <div class="bullet-item">
+      <div class="skill-entry">
         <span class="skill-name">Tools/Libraries/Devices:</span> REST APIs, React, GitHub, Google Tink, Arduino, Raspberry Pi
       </div>
     </div>
@@ -326,8 +365,8 @@ body {
       
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title">IBM India Private Limited - AEM Sites Application Developer</div>
-        <div class="work-duration">Duration: November 2023 to July 2025</div>
+        <div class="work-title"><span class="work-position">AEM Sites Application Developer</span> @ <span class="work-org">IBM India Private Limited</span></div>
+        <div class="work-duration">November 2023 - July 2025</div>
       </div>
       
       <div class="work-meta">
@@ -346,8 +385,8 @@ body {
     </div>
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title">IBM India Private Limited - SAP BI AMS BW Consultant</div>
-        <div class="work-duration">Duration: September 2022 to October 2023</div>
+        <div class="work-title"><span class="work-position">SAP BI AMS BW Consultant</span> @ <span class="work-org">IBM India Private Limited</span></div>
+        <div class="work-duration">September 2022 - October 2023</div>
       </div>
       
       <div class="work-meta">
@@ -364,8 +403,8 @@ body {
     </div>
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title">College of Engineering - Guindy - Full Stack Developer Intern</div>
-        <div class="work-duration">Duration: July 2022 to August 2022</div>
+        <div class="work-title"><span class="work-position">Full Stack Developer Intern</span> @ <span class="work-org">College of Engineering - Guindy</span></div>
+        <div class="work-duration">July 2022 - August 2022</div>
       </div>
       
       <div class="work-meta">
@@ -381,8 +420,8 @@ body {
     </div>
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title">IBM India Private Limited - Associate Application Developer Intern</div>
-        <div class="work-duration">Duration: January 2022 to June 2022</div>
+        <div class="work-title"><span class="work-position">Associate Application Developer Intern</span> @ <span class="work-org">IBM India Private Limited</span></div>
+        <div class="work-duration">January 2022 - June 2022</div>
       </div>
       
       <div class="work-meta">
@@ -397,8 +436,8 @@ body {
     </div>
     <div class="work-entry">
       <div class="work-header">
-        <div class="work-title">Rishabh Software Private Limited, Vadodara - Machine Learning Intern</div>
-        <div class="work-duration">Duration: January 2020 to June 2020</div>
+        <div class="work-title"><span class="work-position">Machine Learning Intern</span> @ <span class="work-org">Rishabh Software Private Limited, Vadodara</span></div>
+        <div class="work-duration">January 2020 - June 2020</div>
       </div>
       
       <div class="work-meta">
@@ -416,19 +455,19 @@ body {
     <h2 class="section-title">Selected Projects</h2>
     <div class="section-body">
       
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">Low-Cost Automation of Existing Electric Devices (MycroLinks):</span> Mobile app + NodeMCU (ESP8266) with real-time control and state sync.
       </div>
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">Fingerprint Attendance Management System:</span> Distributed biometric devices with central admin portal; CSV/Excel exports and audit logs.
       </div>
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">Event Enrolment &amp; Online Payments (Deepwoods MCC):</span> Enrolment, ticketing, and payment confirmations with dashboard and exports.
       </div>
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">Android Password Manager:</span> On-device encryption with cloud-managed keys; Secure credential sync.
       </div>
-      <div class="bullet-item">
+      <div class="project-entry">
         <span class="project-name">Classroom Assignment Evaluator:</span> Gemini-based LLM for automated assignment evaluation and feedback using teacher-defined criteria.
       </div>
     </div>
@@ -438,39 +477,43 @@ body {
       
     <div class="edu-entry">
       <div class="edu-header">
-        <div class="edu-degree">M.Sc Systems Engineering for the Internet of Things</div>
-        <div class="edu-year">2026</div>
+        <div class="edu-title"><span class="edu-degree">M.Sc Systems Engineering for the Internet of Things</span> @ <span class="edu-institution">University College London</span></div>
+        <div class="edu-year">2025 - 2026</div>
       </div>
-      <div class="edu-institution">University College London</div>
-      <div class="edu-courses">Coursework: Designing Sensor Systems, Real-World Multi-agent Systems</div>
     </div>
     <div class="edu-entry">
       <div class="edu-header">
-        <div class="edu-degree">Master Computer Application</div>
-        <div class="edu-year">2022</div>
+        <div class="edu-title"><span class="edu-degree">Master Computer Application</span> @ <span class="edu-institution">Anna University, College of Engineering – Guindy</span></div>
+        <div class="edu-year">2020 - 2022</div>
       </div>
-      <div class="edu-institution">Anna University, College of Engineering – Guindy | 8.5 CGPA</div>
-      <div class="edu-courses">Coursework: Cyber Security and Internet of Things, Advanced Java, Machine Learning</div>
     </div>
     <div class="edu-entry">
       <div class="edu-header">
-        <div class="edu-degree">Bachelor Computer Application</div>
-        <div class="edu-year">2020</div>
+        <div class="edu-title"><span class="edu-degree">Bachelor Computer Application</span> @ <span class="edu-institution">Maharaja Sayajirao University of Baroda</span></div>
+        <div class="edu-year">2017 - 2020</div>
       </div>
-      <div class="edu-institution">Maharaja Sayajirao University of Baroda | 7.5 CGPA</div>
-      <div class="edu-courses">Coursework: Advanced Java, Machine Learning, Android Development, Networking</div>
     </div>
     </div>
     
     <h2 class="section-title">Leadership &amp; Volunteering</h2>
     <div class="section-body">
       
-      <div class="bullet-item volunteer-item">
-        <span class="vol-title">Volunteer Youth Mentor – Crossroads (2024–2024):</span> Co-led weekly teen sessions, designing activities that build communication and conflict-resolution skills while maintaining a safe, respectful environment. Followed safeguarding procedures, kept matters confidential, and sign-posted students to appropriate support.
+    <div class="volunteer-entry">
+      <div class="volunteer-header">
+        <div class="volunteer-title"><span class="volunteer-position">Volunteer Youth Mentor</span> @ <span class="volunteer-org">Crossroads</span></div>
+        <div class="volunteer-duration">2024 - 2024</div>
       </div>
-      <div class="bullet-item volunteer-item">
-        <span class="vol-title">MCA Class Representative – Anna University (2020–2022):</span> Elected cohort liaison; ran quick pulse-checks to surface concerns, presented consolidated feedback and solutions to faculty, mediated timetable/assessment conflicts, and ensured updates and actions were communicated and closed.
+      <p class="volunteer-summary">Co-led weekly teen sessions, designing activities that build communication and conflict-resolution skills while maintaining a safe, respectful environment. Followed safeguarding procedures, kept matters confidential, and sign-posted students to appropriate support.</p>
+      
+    </div>
+    <div class="volunteer-entry">
+      <div class="volunteer-header">
+        <div class="volunteer-title"><span class="volunteer-position">MCA Class Representative</span> @ <span class="volunteer-org">Anna University</span></div>
+        <div class="volunteer-duration">2020 - 2022</div>
       </div>
+      <p class="volunteer-summary">Elected cohort liaison; ran quick pulse-checks to surface concerns, presented consolidated feedback and solutions to faculty, mediated timetable/assessment conflicts, and ensured updates and actions were communicated and closed.</p>
+      
+    </div>
     </div>
     
     <h2 class="section-title">Credentials</h2>
@@ -485,8 +528,8 @@ body {
     
     <h2 class="section-title">Additional</h2>
     <div class="section-body">
-      <div class="additional-line"><span class="additional-label">Languages:</span> English (IELTS 8.0), Tamil (Native), Hindi (Fluent)</div>
-      <div class="additional-line"><span class="additional-label">Referees:</span> Available on request</div>
+      <div class="additional-entry"><span class="additional-label">Languages:</span> English (IELTS 8.0), Tamil (Native), Hindi (Fluent)</div>
+      <div class="additional-entry"><span class="additional-label">Referees:</span> Available on request</div>
     </div>
   </div>
 </body>
